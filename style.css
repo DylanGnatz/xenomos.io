@@ -1,0 +1,75 @@
+
+/*Sets video as fullscreen background*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+/*Changes background video to still image on smaller screens*/
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url("cryptoframe.png") center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+header{
+  margin-top: 150px;
+  margin-bottom: 30px;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 3px;
+
+}
+
+#title {
+  font-size: 60px;
+  
+}
+#subtitle {
+  font-size: 36px;
+}
+#changecolor {
+color: "white"
+-webkit-transition: color 3.0s ease;
+-moz-transition: color 3.0s ease;
+-o-transition: color 3.0s ease;
+transition: color 3.0s ease;
+}
+
+nav {
+	font-family: "Open Sans", sans-serif;
+}
+.btn {
+  margin-top: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem; 
+}
